@@ -11,5 +11,6 @@ const port = process.env.PORT || 8080
 app.use(cors())
 app.use(express.json({limit: "50mb"}))
 app.use(Router)
+app.use(express.static('public'))
 
 app.listen(port, () => console.log(`Connected on port -> ${port}`))
