@@ -5,7 +5,7 @@ const fs = require('fs')
 const GitlabService = require("./services/GitlabService")
 const uuid = require('uuid')
 
-Router.get("/start", (req, res) => {
+Router.get("/", (req, res) => {
 
     res.status(200).json({
         state: 'ok'
