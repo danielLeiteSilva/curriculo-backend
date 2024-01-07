@@ -1,6 +1,6 @@
 const { MongoClient, ServerApiVersion } = require('mongodb')
 
-const client = new MongoClient("mongodb+srv://DanielLeite:Dan%40549216895@database.to2xi.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true, serverApi: ServerApiVersion.v1 });
+const client = new MongoClient(process.env.MONGO, { useNewUrlParser: true, serverApi: ServerApiVersion.v1 });
 const dbName = 'people';
 
 async function Main() {
